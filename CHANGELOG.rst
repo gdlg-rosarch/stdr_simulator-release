@@ -2,6 +2,13 @@
 Changelog for package stdr_gui
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.0 (2016-07-18)
+------------------
+* Migrate to package format 2, fix dependency issues
+* Refactoring in sources classes, using better astraction
+* Support for omni motion controller in robot creator
+* Kinematic model appears in info panel
+
 0.2.0 (2014-07-25)
 ------------------
 * Feedback added in case of double frame ids
