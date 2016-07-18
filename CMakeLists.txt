@@ -6,12 +6,11 @@ find_package(catkin REQUIRED COMPONENTS
   roslib
   tf
   stdr_msgs
-  stdr_robot
   stdr_server
+  stdr_robot
   stdr_parser
   sensor_msgs
   nav_msgs
-  map_server
 )
 
 include_directories( include
@@ -20,9 +19,9 @@ include_directories( include
 
 link_directories(${catkin_LIBRARY_DIRS})
 
-find_package(Qt4 REQUIRED COMPONENTS 
-  QtCore 
-  QtGui 
+find_package(Qt4 REQUIRED COMPONENTS
+  QtCore
+  QtGui
   QtUiTools
 )
 
@@ -35,27 +34,26 @@ include_directories(
 )
 
 catkin_package(
-  DEPENDS   
-    QtCore 
-    QtGui 
+  DEPENDS
+    QtCore
+    QtGui
     QtUiTools
   CATKIN_DEPENDS
     roscpp
     roslib
     tf
     stdr_msgs
-    stdr_robot
     stdr_server
+    stdr_robot
     stdr_parser
     sensor_msgs
     nav_msgs
-    map_server
-  INCLUDE_DIRS include
-  LIBRARIES 
+  #INCLUDE_DIRS
+  #LIBRARIES
 )
 
 #----------------------------------------------------------------------------------------------------#
-set(QT_FORMS 
+set(QT_FORMS
   ui/information.ui             ui/kinematicProperties.ui
   ui/laserProperties.ui         ui/laserVisualization.ui
   ui/map.ui                     ui/rfidAntennaProperties.ui
@@ -111,15 +109,16 @@ add_executable(stdr_gui_node
   src/stdr_gui/stdr_visualization/stdr_laser_visualization.cpp
   src/stdr_gui/stdr_visualization/stdr_sonar_visualization.cpp
   src/stdr_gui/stdr_visualization/stdr_robot_visualization.cpp
+  src/stdr_gui/stdr_map_metainformation/stdr_gui_source.cpp
   src/stdr_gui/stdr_map_metainformation/stdr_gui_co2_source.cpp
   src/stdr_gui/stdr_map_metainformation/stdr_gui_thermal_source.cpp
   src/stdr_gui/stdr_map_metainformation/stdr_gui_rfid_tag.cpp
   src/stdr_gui/stdr_map_metainformation/stdr_gui_sound_source.cpp
   ${QT_FORMS_HPP} ${SAMPLE_MOC_SRCS}
 )
-add_dependencies(stdr_gui_node stdr_msgs_gencpp stdr_robot_gencpp)  # Wait for std messages to build
+add_dependencies(stdr_gui_node stdr_msgs_gencpp)  # Wait for std messages to build
 target_link_libraries(stdr_gui_node
-  ${catkin_LIBRARIES} 
+  ${catkin_LIBRARIES}
   ${QT_LIBRARIES}
 )
 
