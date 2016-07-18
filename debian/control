@@ -1,0 +1,12 @@
+Source: ros-kinetic-stdr-msgs
+Section: misc
+Priority: extra
+Maintainer: Chris Zalidis <zalidis@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-actionlib-msgs, ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-message-generation, ros-kinetic-nav-msgs, ros-kinetic-std-msgs
+Homepage: http://stdr-simulator-ros-pkg.github.io
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-stdr-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-actionlib-msgs, ros-kinetic-geometry-msgs, ros-kinetic-message-runtime, ros-kinetic-nav-msgs, ros-kinetic-std-msgs
+Description: Provides msgs, services and actions for STDR Simulator.
