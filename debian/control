@@ -1,0 +1,12 @@
+Source: ros-kinetic-stdr-server
+Section: misc
+Priority: extra
+Maintainer: Chris Zalidis <zalidis@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libyaml-cpp-dev, ros-kinetic-actionlib, ros-kinetic-catkin, ros-kinetic-map-server, ros-kinetic-nav-msgs, ros-kinetic-nodelet, ros-kinetic-roscpp, ros-kinetic-rostest, ros-kinetic-stdr-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Homepage: http://stdr-simulator-ros-pkg.github.io
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-stdr-server
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libyaml-cpp-dev, ros-kinetic-actionlib, ros-kinetic-map-server, ros-kinetic-nav-msgs, ros-kinetic-nodelet, ros-kinetic-roscpp, ros-kinetic-stdr-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Description: Implements synchronization and coordination functionalities of STDR Simulator.
