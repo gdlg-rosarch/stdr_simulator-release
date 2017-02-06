@@ -2,6 +2,10 @@
 Changelog for package stdr_gui
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.2 (2017-02-06)
+------------------
+* Fix cmakes, no more cmake warnings
+
 0.3.1 (2016-07-18)
 ------------------
 
