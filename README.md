@@ -1,3 +1,35 @@
+## stdr_simulator (jade) - 0.3.2-0
+
+The packages in the `stdr_simulator` repository were released into the `jade` distro by running `/usr/bin/bloom-release stdr_simulator --track jade --rosdistro jade` on `Mon, 06 Feb 2017 08:52:54 -0000`
+
+These packages were released:
+- `stdr_gui`
+- `stdr_launchers`
+- `stdr_msgs`
+- `stdr_parser`
+- `stdr_resources`
+- `stdr_robot`
+- `stdr_samples`
+- `stdr_server`
+- `stdr_simulator`
+
+Version of package(s) in repository `stdr_simulator`:
+
+- upstream repository: https://github.com/stdr-simulator-ros-pkg/stdr_simulator.git
+- release repository: https://github.com/stdr-simulator-ros-pkg/stdr_simulator-release.git
+- rosdistro version: `0.3.1-0`
+- old version: `0.3.1-0`
+- new version: `0.3.2-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## stdr_simulator (indigo) - 0.3.2-0
 
 The packages in the `stdr_simulator` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo stdr_simulator` on `Mon, 06 Feb 2017 08:32:11 -0000`
